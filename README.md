@@ -9,7 +9,7 @@
 
    HERE IS A CODE EXAMPLE OF THE PIR MOTION SENSOR IN EFFECT
 
-   
+
 // Define the pins for the LED and PIR sensor
 const int ledPin = 13;    // Digital pin for the LED
 const int pirPin = 2;     // Digital pin for the PIR sensor
@@ -47,7 +47,7 @@ void loop() {
   if (val == HIGH) {
     digitalWrite(ledPin, HIGH); // Turn LED ON
 
-    // If the PIR state was previously LOW, it means motion has just been detected
+ // If the PIR state was previously LOW, it means motion has just been detected
     if (pirState == LOW) {
       Serial.println("Motion detected!");
       pirState = HIGH; // Update the PIR state
@@ -55,7 +55,7 @@ void loop() {
   } else {
     digitalWrite(ledPin, LOW); // Turn LED OFF
 
-    // If the PIR state was previously HIGH, it means motion has just ended
+ // If the PIR state was previously HIGH, it means motion has just ended
     if (pirState == HIGH) {
       Serial.println("Motion ended!");
       pirState = LOW; // Update the PIR state
