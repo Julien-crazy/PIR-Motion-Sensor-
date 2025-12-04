@@ -4,7 +4,12 @@
 
 
 
+
+
+
    HERE IS A CODE EXAMPLE OF THE PIR MOTION SENSOR IN EFFECT
+
+   
 // Define the pins for the LED and PIR sensor
 const int ledPin = 13;    // Digital pin for the LED
 const int pirPin = 2;     // Digital pin for the PIR sensor
